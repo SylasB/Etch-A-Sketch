@@ -31,8 +31,8 @@
                 <input type="text" 
                 placeholder="Change Board Size" 
                 value="16"
-                oninput="changeSize(this.value)"/>
-                <button>Set Size</button>
+                onchange="changeSize(this.value)"/>
+                <button onclick="changeSize(this.value)">Set Size</button>
             </div>
             <div class="error">The size must be between 2 and 100</div>
         </div>

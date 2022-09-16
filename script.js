@@ -40,7 +40,7 @@ function resetBoard() {
 
 function changeSize(input) {
     if (input >= 2 && input <= 100) {
-        document.querySelector(".error").stlye.display = "none";
+        document.querySelector(".error").style.display = "none";
         populateBoard(input);
     } 
     else {
