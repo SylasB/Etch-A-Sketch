@@ -27,8 +27,11 @@
                 <button class="rainbowButton" onclick="changeColor('rainbow')">Rainbow</button>
                 <button class="resetButton" onclick="resetBoard()">Reset Board</button>
             </div>
-            <div class="setSize">
-                <input type="text" placeholder="Change Board Size" value="16" onchange="changeSize(this.value)">
+            <div>
+                <input type="text" 
+                placeholder="Change Board Size" 
+                value="16"
+                oninput="changeSize(this.value)"/>
                 <button>Set Size</button>
             </div>
             <div class="error">The size must be between 2 and 100</div>
