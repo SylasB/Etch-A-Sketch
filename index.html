@@ -5,12 +5,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Etch-A-Sketch</title>
+    <link rel="stylesheet" href="">
     <link rel="stylesheet" href="/style.css">
     <script src="/script.js" defer></script>
 </head>
 <body>
     <div class="title">
         <h1>Welcome to Etch-A-Sketch</h1>
+        <p>
+            Hover your cursor over the grid to draw.
+        </p>
+    </div>
+    <div class="container">
+        <div class="content">
+            <div class="board">
+
+            </div>
+            <div class="buttons">
+                <button class="blackButton" onclick="changeColor('black')">Black</button>
+                <button class="erasorButton" onclick="changeColor('white')">Erasor</button>
+                <button class="rainbowButton" onclick="changeColor('rainbow')">Rainbow</button>
+                <button class="resetButton" onclick="resetBoard()">Reset Board</button>
+            </div>
+            <div class="setSize">
+                <input type="text" placeholder="Change Board Size" value="16" onchange="changeSize(this.value)">
+                <button>Set Size</button>
+            </div>
+            <div class="error">The size must be between 2 and 100</div>
+        </div>
     </div>
 </body>
 </html>
